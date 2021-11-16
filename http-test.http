@@ -1,5 +1,12 @@
 ###
-GET http://localhost:8080/api/home
+GET http://localhost:9001/api/home
 ###
-GET http://localhost:8080/api/version
+GET http://localhost:9001/api/version
 ###
+GET http://localhost:9001/api/count
+###
+GET http://localhost:9001/api/check
+###
+GET http://localhost:9001/api/check2
+###
+

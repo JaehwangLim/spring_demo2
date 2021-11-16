@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.5.6'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id "io.freefair.lombok" version "6.3.0"
 }
 
 group = 'com.example'
@@ -20,10 +21,27 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compileOnly 'org.projectlombok:lombok'
+
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	annotationProcessor 'org.projectlombok:lombok'
+	
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+	// // lombok - projectlombok.org/setup/gradle
+	// use plugin (id "io.freefair.lombok" version "6.3.0") instead of these
+	// compileOnly 'org.projectlombok:lombok:1.18.22'
+	// annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+	// testCompileOnly 'org.projectlombok:lombok:1.18.22'
+	// testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+
+	// springdoc
+	implementation 'org.springdoc:springdoc-openapi-ui:1.5.12'
+
+	// mysql
+	implementation 'mysql:mysql-connector-java'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 }
 
 test {

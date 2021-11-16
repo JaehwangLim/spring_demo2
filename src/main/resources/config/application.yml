@@ -1,0 +1,7 @@
+spring:
+    application:
+        name: spring-demo-application
+        version: 1.0.0
+    
+    profiles:
+        active: local
